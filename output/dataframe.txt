@@ -1,0 +1,26 @@
+import random
+import pandas as pd
+
+# Função para gerar dados aleatórios
+def gerar_dados(n):
+    dados = []
+    for i in range(1, n+1):
+        sexo = random.choice(['M', 'F'])
+        idade = random.randint(20, 80)
+        peso = random.randint(50, 115)
+        altura = random.randint(150, 200)
+        resultado = random.randint(98, 200)
+        dados.append([i, sexo, idade, peso, altura, resultado])
+    return dados
+
+# Gerar 100 registros
+dados = gerar_dados(100)
+
+# Criar DataFrame
+df = pd.DataFrame(dados, columns=['id_paciente', 'genero', 'idade', 'peso', 'altura', 'resultado'])
+
+# Exibir os primeiros 5 registros
+print(df.head())
+
+# Salvar em um arquivo CSV
+df.to_csv('dados_diabetes.csv', index=False)

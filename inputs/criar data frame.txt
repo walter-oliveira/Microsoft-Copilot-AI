@@ -1,0 +1,1 @@
+criar um dataset de diabetes com os seguintes dados ,sexo,idade,peso,altura e resultado na linguagem em python

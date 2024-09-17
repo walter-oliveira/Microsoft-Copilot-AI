@@ -1,0 +1,101 @@
+Nível Básico
+- Introdução ao Python:
+- Instalação do Python e configuração do ambiente.
+-Sintaxe básica: variáveis, tipos de dados, operadores.
+Estruturas de controle: condicionais (if, else) e loops (for, while).
+Manipulação de Strings:
+- Operações básicas: concatenação, formatação, indexação.
+- Métodos de strings: split, join, replace, etc.
+Estruturas de Dados:
+- Listas, tuplas, conjuntos e dicionários.
+- Métodos e operações básicas com essas estruturas.
+Funções:
+- Definição e chamada de funções.
+- Parâmetros e retorno de valores.
+- Funções lambda.
+Nível Intermediário :
+- Programação Orientada a Objetos (POO):
+- Classes e objetos.
+- Herança, polimorfismo e encapsulamento.
+Manipulação de Arquivos:
+- Leitura e escrita de arquivos.
+- Tratamento de exceções.
+Módulos e Pacotes:
+- Importação de módulos.
+- Criação de pacotes.
+Bibliotecas Padrão e Terceiros:
+- Uso de bibliotecas como os, sys, datetime, math.
+A biblioteca os permite interagir com o sistema operacional. Você pode manipular arquivos e diretórios, executar comandos do sistema, entre outras tarefas.
+
+ import os
+
+    # Obter o diretório de trabalho atual
+    current_directory = os.getcwd()
+    print(f"Diretório atual: {current_directory}")
+
+    # Listar arquivos e diretórios
+    files = os.listdir(current_directory)
+    print(f"Arquivos e diretórios: {files}")
+
+    # Criar um novo diretório
+    os.mkdir('novo_diretorio')
+
+A biblioteca sys fornece acesso a algumas variáveis e funções que interagem fortemente com o interpretador Python.
+
+    import sys
+
+    # Obter a versão do Python
+    print(f"Versão do Python: {sys.version}")
+
+    # Adicionar um caminho ao sys.path
+    sys.path.append('/meu/caminho/personalizado')
+
+    # Sair do programa
+    sys.exit()
+A biblioteca datetime é usada para manipular datas e horas.
+    from datetime import datetime, timedelta
+
+    # Obter a data e hora atual
+    now = datetime.now()
+    print(f"Data e hora atual: {now}")
+
+    # Formatar a data
+    formatted_date = now.strftime("%d/%m/%Y %H:%M:%S")
+    print(f"Data formatada: {formatted_date}")
+
+    # Calcular uma data futura
+    future_date = now + timedelta(days=10)
+    print(f"Data futura: {future_date}")
+A biblioteca math fornece funções matemáticas básicas, como trigonometria, logaritmos, et
+
+    import math
+
+    # Calcular a raiz quadrada
+    sqrt_value = math.sqrt(16)
+    print(f"Raiz quadrada de 16: {sqrt_value}")
+
+    # Calcular o seno de um ângulo (em radianos)
+    sine_value = math.sin(math.pi / 2)
+    print(f"Seno de π/2: {sine_value}")
+
+    # Calcular o logaritmo natural
+    log_value = math.log(10)
+    print(f"Logaritmo natural de 10: {log_value}")
+
+- Introdução a bibliotecas populares como numpy, pandas, matplotlib.
+Nível Avançado :
+Programação Funcional:
+- Map, filter e reduce.
+- Compreensão de listas e geradores.
+Decoração e Metaprogramação:
+- Decoradores.
+- Metaclasses.
+Desenvolvimento Web:
+- Introdução a frameworks como Django ou Flask.
+- Criação de APIs RESTful.
+Data Science e Machine Learning:
+- Uso de bibliotecas como scikit-learn, TensorFlow, Keras.
+- Análise de dados com pandas e visualização com matplotlib e seaborn.
+Boas Práticas e Testes:
+- PEP 8 (Guia de Estilo do Python).
+- Testes unitários com unittest e pytest.
